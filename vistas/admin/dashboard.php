@@ -14,8 +14,11 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-$sql = "SELECT usuarios.Cedula, usuarios.Nombre, interacciones.SONIA, interacciones.IAN, interacciones.INGRID, interacciones.SANDRA, interacciones.IGNACIO, interacciones.IVANNA, interacciones.SANTIAGO, interacciones.ISABEL, interacciones.IVÁN, interacciones.ultima_interaccion FROM usuarios JOIN interacciones ON usuarios.Cedula = interacciones.UsuarioCedula";
+$sql = "SELECT usuarios.Cedula, usuarios.Nombre, interacciones.SONIA, interacciones.IAN, interacciones.INGRID, interacciones.SANDRA, interacciones.IGNACIO, interacciones.IVANNA, interacciones.SANTIAGO, interacciones.ISABEL, interacciones.IVÁN, 
+DATE_ADD(interacciones.ultima_interaccion, INTERVAL 1 HOUR) AS ultima_interaccion
+FROM usuarios JOIN interacciones ON usuarios.Cedula = interacciones.UsuarioCedula";
 $result = $conn->query($sql);
+
 
 ?>
 
