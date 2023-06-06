@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteRule ^sistema vistas/sistema.php [L]
+RewriteRule ^casoclinico vistas/casoclinico.php [L]
+RewriteRule ^paciente vistas/paciente.php [L]
+RewriteRule ^tratamiento vistas/tratamiento.php [L]
+RewriteRule ^admin vistas/admin/admin.php [L]
+RewriteRule ^dashboard vistas/admin/dashboard.php [L]
+
+
+
+RewriteRule ^home index.php [L]
