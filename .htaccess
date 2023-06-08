@@ -5,6 +5,7 @@ RewriteRule ^paciente vistas/paciente.php [L]
 RewriteRule ^tratamiento vistas/tratamiento.php [L]
 RewriteRule ^admin vistas/admin/admin.php [L]
 RewriteRule ^dashboard vistas/admin/dashboard.php [L]
+RewriteRule ^legales vistas/legales.php [L]
 
 
 

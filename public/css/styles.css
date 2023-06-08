@@ -617,6 +617,16 @@ ul {
     height: 30px;
 }
 
+/* Legales.php */
+
+.fondo-especial{
+    background-image: url('../img/fondogreenyellow.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 3rem 0;
+}
+
 
 @media (min-width: 800px) and (max-width: 1200px) {
 

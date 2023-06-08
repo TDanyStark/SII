@@ -6,8 +6,8 @@
   </div>
 
   <div id="clinicos-button">
-    <a href="clinicos" target="_blank">
-      <img src="public/img/logos/clinicos.png" alt="clinicos">
+    <a href="legales" target="_blank">
+      <img src="public/img/logos/clinicos.png" alt="legales">
     </a>
   </div>
 </div>

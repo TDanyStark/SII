@@ -15,7 +15,7 @@ if (!isset($cedula)) {
 
 <?php require_once 'comunes/header.php';?>
 
-<div class="container-xl" style="padding:0;  margin-bottom: -50px;">
+<div class="container-xl" style="padding:0;">
     <div class='fondoespecial' style="padding-bottom:50px;">
 
         <div class="contenedor-h2" >
@@ -71,8 +71,14 @@ if (!isset($cedula)) {
 
 
 
+
 <?php 
 mysqli_close($conn);
 require_once 'comunes/footer.php';
 require_once 'btn-homeclinicos.php';
 ?>
+
+
+<script>
+    document.getElementById("home-button").classList.add("d-none");
+</script>
