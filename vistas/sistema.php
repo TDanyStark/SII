@@ -69,4 +69,10 @@ if (!isset($cedula)) {
     </div>
 </div>
 
-<?php require_once 'comunes/footer.php';?>
+
+
+<?php 
+mysqli_close($conn);
+require_once 'comunes/footer.php';
+require_once 'btn-homeclinicos.php';
+?>

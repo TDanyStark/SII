@@ -3,6 +3,16 @@ document.getElementById("iniciarSesionBtn").addEventListener("click", function()
     var cedula = document.getElementById("cedula").value;
     var nombre = document.getElementById("nombre").value;
 
+    // Validar que el campo de cédula no esté vacío
+    if (cedula === "") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Debes ingresar tu cédula',
+        })
+        return;
+    }
+
     // Realizar una solicitud al archivo PHP utilizando Fetch
     fetch("modelos/validar_usuario.php", {
         method: "POST",

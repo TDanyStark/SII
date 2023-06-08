@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .logoAbbott{
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
@@ -333,17 +339,19 @@ background-color: #f3e605;
     border-bottom: none;
     margin-top: 0;
 }
+
 .btn-tratamiento{
+    display: inline-block;
     background-color: #ffd100;
     color: #006747;
-    padding: 1em 2em;
+    padding: 1rem 2rem;
     font-size: 1.5rem;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
     border-radius: 10px;
     border: none;    
-    margin: 2rem 3rem;
-    text-decoration: none;  
+    text-decoration: none; 
+    margin: 2rem 3rem; 
 }
 
 .color-black{
@@ -553,23 +561,7 @@ ul {
     animation: zoom 2s infinite ease-in-out;
 }
 
-@keyframes zoom {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
-@media (min-width: 1600px) {
-    .contenedor-card{
-        width: 62%;
-    }
-}
 
 .no-scroll {
     overflow: hidden;
@@ -598,14 +590,40 @@ ul {
     margin: 2rem 3rem;
 }
 
+#botones-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  #botones-container div {
+    background-color: #fdd100;
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+  }
+  
+  #botones-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tratamiento-espacio{
+    height: 30px;
+}
+
+
 @media (min-width: 800px) and (max-width: 1200px) {
 
 .casos, .clinicos{
     font-size: 3.5rem;
 }
-.tratamiento-espacio{
-    height: 30px;
-}
+
 h1{
     font-size: 2.5rem;
 }
@@ -639,6 +657,25 @@ h1{
 }
 
 }
+
+@media (min-width: 1600px) {
+    .contenedor-card{
+        width: 62%;
+    }
+}
+
+@keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 
 
 

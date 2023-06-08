@@ -40,11 +40,7 @@ if (mysqli_num_rows($resultado) > 0) {
     // Mostrar los casos clínicos
     while ($row = mysqli_fetch_assoc($resultado)) {
         echo $row['codigoHTML'];
-        echo "<div class='tratamiento-espacio'>";
-        echo "</div>";
-        echo "<a href='tratamiento?id=".$row['ID']."' type='button' class='btn-tratamiento' >ELIGE EL TRATAMIENTO PARA ".$row['nombre']." </a>";
-        echo "<div class='tratamiento-espacio'>";
-        echo "</div>";
+        echo "<a href='tratamiento?id=".$row['ID']."' class='btn-tratamiento'>SELECCIONE EL TRATAMIENTO PARA ".$row['nombre']." </a>";
         echo "</div>";
     }
 } else {
@@ -52,9 +48,13 @@ if (mysqli_num_rows($resultado) > 0) {
     echo "<div class='col-md-12'>";
     echo "<h2>No se encontraron casos clínicos</h2>";
     echo "</div>";
+    echo "</div>";
+
 }
+mysqli_close($conn);
 
 require_once 'comunes/footer.php';
 ?>
+<?php require_once 'btn-homeclinicos.php';?>
 
 

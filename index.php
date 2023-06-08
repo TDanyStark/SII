@@ -83,7 +83,7 @@
             para tener siempre el mejor 
             tratamiento para su paciente</h6>
             <button  type="button" class="ver_aqui" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                VER AQUI
+                VER AQUÍ
             </button>
     </div>
 </div>
@@ -99,7 +99,7 @@
     
 <!-- Button trigger modal -->
 <button style="border:none;" type="button" class="chat-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    VER CASOS CLINICOS
+    VER CASOS CLÍNICOS
 </button>
     
 <!-- Modal -->

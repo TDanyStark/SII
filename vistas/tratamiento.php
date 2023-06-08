@@ -219,5 +219,7 @@ if (mysqli_num_rows($resultado2) > 0) {
 </script>
 
 <?php 
+mysqli_close($conn);
 include_once 'comunes/footer.php';
+require_once 'btn-homeclinicos.php';
 ?>
